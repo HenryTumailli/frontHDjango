@@ -16,11 +16,6 @@ import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
   imports: [
     CommonModule,
     LayoutRoutingModule
-  ],
-  exports: [
-    MainComponent,
-    HeaderComponent,
-    SidenavbarComponent
   ]
 })
 export class LayoutModule { }
