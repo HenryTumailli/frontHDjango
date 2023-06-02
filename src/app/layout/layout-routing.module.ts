@@ -6,8 +6,8 @@ const routes: Routes = [
   {
     path:'',
     children: [
-      {path:'main', component: MainComponent },
-      // {path:'**',redirectTo:'main'}
+      {path:'main', component: MainComponent},
+      // {path:'**',redirectTo:'login'}
     ]
   }
 
