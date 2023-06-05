@@ -30,8 +30,8 @@ export class SidenavbarComponent implements OnInit {
     
   }
 
-  navegarRuta(ruta:string){
-    this.router.navigate([ruta]);
+  navegarRuta(ruta:any){
+    this.router.navigate(['/layout/main/'+ruta]);
   }
 
 
