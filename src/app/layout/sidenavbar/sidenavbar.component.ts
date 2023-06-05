@@ -21,7 +21,7 @@ export class SidenavbarComponent implements OnInit {
     },
     {
       number: '2',
-      name: 'home',
+      name: 'prueba 2',
       icon: 'bi bi-house'
     }
   ]
