@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenavbar',
@@ -7,11 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SidenavbarComponent implements OnInit {
   @Input() sideNavStatus: boolean = false
+
+  constructor(
+    private router: Router
+  ){}
   
   list = [
     {
       number: '1',
-      name: 'home',
+      name: 'prueba',
       icon: 'bi bi-house'
     },
     {
@@ -23,6 +28,10 @@ export class SidenavbarComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+
+  navegarRuta(ruta:string){
+    this.router.navigate([ruta]);
   }
 
 

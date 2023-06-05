@@ -3,7 +3,8 @@
 
     <main>
         <app-sidenavbar [sideNavStatus]="sideNavStatus" [ngClass] ="{'app-side-nav-open': sideNavStatus}"></app-sidenavbar>
-        <div class="display-area" [ngClass]="{'display-arear-shrink':sideNavStatus}">
+        <div class="display-area" [ngClass]="{'display-area-shrink':sideNavStatus}">
+            <router-outlet></router-outlet>
         </div>
     </main>
 </div>
